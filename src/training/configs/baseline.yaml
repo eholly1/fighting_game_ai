@@ -1,0 +1,55 @@
+# Baseline experiment configuration
+experiment:
+  name: "baseline"
+  description: "Baseline training with original reward structure"
+
+training:
+  total_steps: 100000000  # 10M steps for extended training
+  batch_size: 2048
+  learning_rate: 3e-4
+  gamma: 0.99
+  gae_lambda: 0.95
+
+  # Evaluation settings
+  eval_interval: 100000  # Evaluate every 100k steps for 10M training
+  eval_games: 20
+
+  # Policy initialization
+  init_from_bc: true  # Start from behavioral cloning for better initial performance
+  bc_policy_path: "policies/easy_behavioral_cloning.pth"
+
+environment:
+  max_episode_steps: 2048
+  headless: true
+
+opponents:
+  types: ["rule_based"]
+  difficulty: "medium"
+
+rewards:
+  # Health-based rewards
+  health_maintenance: 0.1
+  damage_opponent: 0.2
+
+  # Combat rewards
+  hit_reward: 5.0
+
+  # Projectile rewards
+  projectile_charge_reward: 0.5
+
+  # Positioning rewards
+  engagement_reward: 0.1
+  engagement_distance: 150
+
+  # Boundary penalties
+  edge_penalty: 0.2
+  edge_threshold: 20
+
+  # Terminal rewards
+  win_reward: 50
+  lose_penalty: 50
+
+logging:
+  save_interval: 10000
+  log_level: "INFO"
+  save_best: true

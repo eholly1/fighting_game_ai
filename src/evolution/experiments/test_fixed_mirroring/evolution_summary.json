@@ -1,0 +1,45 @@
+{
+  "experiment_name": "test_fixed_mirroring",
+  "config": {
+    "population_size": 5,
+    "generations": 2,
+    "max_agents_hall_of_fame": 100,
+    "swiss_rounds": 3,
+    "games_per_match": 3,
+    "max_lines": 1400,
+    "max_chars": 40000,
+    "timeout_seconds": 1.0,
+    "mutation_rate": 0.3,
+    "elite_size": 3,
+    "anthropic_model": "claude-sonnet-4-20250514",
+    "rule_based_opponents": [
+      "easy",
+      "medium",
+      "hard"
+    ]
+  },
+  "started_at": 1748801582.589015,
+  "generations": [
+    {
+      "generation": 0,
+      "timestamp": 1748801582.589016,
+      "best_fitness": 96.86666666666183,
+      "avg_fitness": 33.66133333333325,
+      "valid_agents": 5,
+      "total_agents": 5,
+      "hall_of_fame_size": 2
+    },
+    {
+      "generation": 1,
+      "timestamp": 1748801736.482621,
+      "best_fitness": 91.16666666666248,
+      "avg_fitness": 27.310666666666293,
+      "valid_agents": 5,
+      "total_agents": 5,
+      "hall_of_fame_size": 4
+    }
+  ],
+  "last_updated": 1748801736.482632,
+  "current_generation": 1,
+  "total_generations_completed": 2
+}

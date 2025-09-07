@@ -1,0 +1,72 @@
+{
+  "experiment_name": "medium_evolution_02",
+  "config": {
+    "population_size": 10,
+    "generations": 5,
+    "max_agents_hall_of_fame": 100,
+    "swiss_rounds": 4,
+    "games_per_match": 20,
+    "max_lines": 1400,
+    "max_chars": 40000,
+    "timeout_seconds": 1.0,
+    "mutation_rate": 0.3,
+    "elite_size": 3,
+    "anthropic_model": "claude-sonnet-4-20250514",
+    "rule_based_opponents": [
+      "easy",
+      "medium",
+      "hard"
+    ]
+  },
+  "started_at": 1748802924.412658,
+  "generations": [
+    {
+      "generation": 0,
+      "timestamp": 1748802924.412659,
+      "best_fitness": 244.0872857142885,
+      "avg_fitness": 39.751637566138186,
+      "valid_agents": 9,
+      "total_agents": 10,
+      "hall_of_fame_size": 5
+    },
+    {
+      "generation": 1,
+      "timestamp": 1748803669.251629,
+      "best_fitness": 188.9441666666672,
+      "avg_fitness": 21.528416666666807,
+      "valid_agents": 10,
+      "total_agents": 10,
+      "hall_of_fame_size": 7
+    },
+    {
+      "generation": 2,
+      "timestamp": 1748804836.546726,
+      "best_fitness": 215.18716666666936,
+      "avg_fitness": 30.190895833333776,
+      "valid_agents": 8,
+      "total_agents": 8,
+      "hall_of_fame_size": 9
+    },
+    {
+      "generation": 3,
+      "timestamp": 1748805413.635831,
+      "best_fitness": 190.73966666666772,
+      "avg_fitness": 21.707966666666856,
+      "valid_agents": 10,
+      "total_agents": 10,
+      "hall_of_fame_size": 11
+    },
+    {
+      "generation": 4,
+      "timestamp": 1748806570.463796,
+      "best_fitness": 187.5278333333342,
+      "avg_fitness": 21.386783333333504,
+      "valid_agents": 10,
+      "total_agents": 10,
+      "hall_of_fame_size": 13
+    }
+  ],
+  "last_updated": 1748806570.463808,
+  "current_generation": 4,
+  "total_generations_completed": 5
+}

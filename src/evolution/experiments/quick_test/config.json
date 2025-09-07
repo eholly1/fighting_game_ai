@@ -1,0 +1,21 @@
+{
+  "population_size": 3,
+  "generations": 1,
+  "max_agents_hall_of_fame": 100,
+  "swiss_rounds": 2,
+  "games_per_match": 1,
+  "max_lines": 1400,
+  "max_chars": 40000,
+  "timeout_seconds": 1.0,
+  "mutation_rate": 0.3,
+  "elite_size": 3,
+  "anthropic_model": "claude-sonnet-4-20250514",
+  "rule_based_opponents": [
+    "easy",
+    "medium",
+    "hard"
+  ],
+  "experiment_name": "quick_test",
+  "created_at": 1748758339.183609,
+  "created_at_human": "2025-05-31T23:12:19.183610"
+}
